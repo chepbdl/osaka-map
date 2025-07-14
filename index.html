@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6a67e5b5d9384640713dd098fe0a1e81 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6a67e5b5d9384640713dd098fe0a1e81" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6a67e5b5d9384640713dd098fe0a1e81 = L.map(
+                "map_6a67e5b5d9384640713dd098fe0a1e81",
+                {
+                    center: [34.6372, 135.4966],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0d79b69f5fb80145f3eb021f2d196e9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_d718fddf8d845675076a769163a0f059 = L.marker(
+                [34.6372, 135.4966],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_9bc9c805771b09c9a559623711837ab8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "red", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "black"}
+            )
+            marker_d718fddf8d845675076a769163a0f059.setIcon(beautify_icon_9bc9c805771b09c9a559623711837ab8);
+        
+    
+            marker_d718fddf8d845675076a769163a0f059.bindTooltip(
+                `<div>
+                     住宿地點 (Day 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90d2825050d8e338b7deb86444460d9d = L.marker(
+                [34.6654, 135.4323],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_12249fb9a34a9885408c4deb32a2b195 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "red", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "black"}
+            )
+            marker_90d2825050d8e338b7deb86444460d9d.setIcon(beautify_icon_12249fb9a34a9885408c4deb32a2b195);
+        
+    
+        var popup_55d94dfab45dff0f0d473e29df91f395 = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_ca72ba0dfb1a9332520b8648b31e92ef = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://tse2.mm.bing.net/th/id/OIP.IJCeIP33qFbazjOqAaJPOwHaFj?pid=Api' width='200'><br><p>大阪最受歡迎的主題樂園，包含超級瑪利歐與哈利波特園區。</p>`)>`)[0];
+            popup_55d94dfab45dff0f0d473e29df91f395.setContent(i_frame_ca72ba0dfb1a9332520b8648b31e92ef);
+        
+
+        marker_90d2825050d8e338b7deb86444460d9d.bindPopup(popup_55d94dfab45dff0f0d473e29df91f395)
+        ;
+
+        
+    
+    
+            marker_90d2825050d8e338b7deb86444460d9d.bindTooltip(
+                `<div>
+                     環球影城 USJ (Day 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8e48aae0731e6bab29cd86bb393d2050 = L.polyline(
+                [[34.6372, 135.4966], [34.6654, 135.4323]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_e2d6bf9cb86b55a66fc220c3ac86594e = L.marker(
+                [34.6513, 135.46445],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_5c9cd9afb6b000e62d8574d0901b55de = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u583a\u7b4b\u7dda\u2192JR\u003c/div\u003e"});
+            marker_e2d6bf9cb86b55a66fc220c3ac86594e.setIcon(div_icon_5c9cd9afb6b000e62d8574d0901b55de);
+        
+    
+            var marker_1b83b5c40f45934f7ba2648efac10e73 = L.marker(
+                [34.6372, 135.4966],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_6f3907aabe0532c076c7378164a5bf92 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "green", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "black"}
+            )
+            marker_1b83b5c40f45934f7ba2648efac10e73.setIcon(beautify_icon_6f3907aabe0532c076c7378164a5bf92);
+        
+    
+            marker_1b83b5c40f45934f7ba2648efac10e73.bindTooltip(
+                `<div>
+                     住宿地點 (Day 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ec60ecac84991fc448f9f825cc51a90 = L.marker(
+                [34.8091, 135.5351],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_9275368f339ffe7de1af8580ea3bf69c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "green", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "black"}
+            )
+            marker_0ec60ecac84991fc448f9f825cc51a90.setIcon(beautify_icon_9275368f339ffe7de1af8580ea3bf69c);
+        
+    
+        var popup_02d55c169a3c27007b864e6f4e46b95e = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_13b78c440c012f20159c608e1561d22a = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://tse3.mm.bing.net/th/id/OIP.ySLoO2k-ApqN3cn4w7RkhAHaE8?r=0&pid=Api' width='200'><br><p>結合摩天輪、水族館、鋼彈與購物中心的綜合型園區。</p>`)>`)[0];
+            popup_02d55c169a3c27007b864e6f4e46b95e.setContent(i_frame_13b78c440c012f20159c608e1561d22a);
+        
+
+        marker_0ec60ecac84991fc448f9f825cc51a90.bindPopup(popup_02d55c169a3c27007b864e6f4e46b95e)
+        ;
+
+        
+    
+    
+            marker_0ec60ecac84991fc448f9f825cc51a90.bindTooltip(
+                `<div>
+                     萬博公園＋EXPOCITY (Day 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_24a10d8900dbe9e61451a8b05cd2644f = L.polyline(
+                [[34.6372, 135.4966], [34.8091, 135.5351]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_bd75f249a5ea5ecc48dedac630c18acf = L.marker(
+                [34.723150000000004, 135.51585],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_ce1dcefe730d4c958a4496e97ee0aa0b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u5fa1\u5802\u7b4b\u7dda\u2192\u55ae\u8ecc\u003c/div\u003e"});
+            marker_bd75f249a5ea5ecc48dedac630c18acf.setIcon(div_icon_ce1dcefe730d4c958a4496e97ee0aa0b);
+        
+    
+            var marker_e72100eede8431997c8921bc84cf40a4 = L.marker(
+                [34.6372, 135.4966],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_428a9443407f8d342bd365665e282f22 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "orange", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "black"}
+            )
+            marker_e72100eede8431997c8921bc84cf40a4.setIcon(beautify_icon_428a9443407f8d342bd365665e282f22);
+        
+    
+            marker_e72100eede8431997c8921bc84cf40a4.bindTooltip(
+                `<div>
+                     住宿地點 (Day 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77c6cb5f4d0a4ae75545451686e2b3d1 = L.marker(
+                [34.6455, 135.5139],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_4bbd2d263740a1786d4587a37f868d58 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "orange", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "black"}
+            )
+            marker_77c6cb5f4d0a4ae75545451686e2b3d1.setIcon(beautify_icon_4bbd2d263740a1786d4587a37f868d58);
+        
+    
+        var popup_10d7a9944c14da346f1a81265d96ef47 = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_1aa4948d06107c259566209f03ca0ef1 = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://tse3.mm.bing.net/th/id/OIP.l3i3RZv6G1u-qGdUVDMlbQHaFS?pid=Api' width='200'><br><p>大阪最高大樓 HARUKAS 頂樓展望台，俯瞰城市全景。</p>`)>`)[0];
+            popup_10d7a9944c14da346f1a81265d96ef47.setContent(i_frame_1aa4948d06107c259566209f03ca0ef1);
+        
+
+        marker_77c6cb5f4d0a4ae75545451686e2b3d1.bindPopup(popup_10d7a9944c14da346f1a81265d96ef47)
+        ;
+
+        
+    
+    
+            marker_77c6cb5f4d0a4ae75545451686e2b3d1.bindTooltip(
+                `<div>
+                     阿倍野展望台 (Day 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b64a7bab19b6220bd28f0a93c8f897ff = L.marker(
+                [34.6525, 135.5167],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_4ad31359f33ee48d6a6e9a8810d88a3f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "orange", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "black"}
+            )
+            marker_b64a7bab19b6220bd28f0a93c8f897ff.setIcon(beautify_icon_4ad31359f33ee48d6a6e9a8810d88a3f);
+        
+    
+        var popup_8b9db919c6e121f7c7f02f0d756c3155 = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_cf10b1f716e33331bbe6aca4579669d7 = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://upload.wikimedia.org/wikipedia/commons/8/84/Tennoji_zoo_20111010.jpg' width='200'><br><p>位於市中心，設施親民，適合親子造訪的都市動物園。</p>`)>`)[0];
+            popup_8b9db919c6e121f7c7f02f0d756c3155.setContent(i_frame_cf10b1f716e33331bbe6aca4579669d7);
+        
+
+        marker_b64a7bab19b6220bd28f0a93c8f897ff.bindPopup(popup_8b9db919c6e121f7c7f02f0d756c3155)
+        ;
+
+        
+    
+    
+            marker_b64a7bab19b6220bd28f0a93c8f897ff.bindTooltip(
+                `<div>
+                     天王寺動物園 (Day 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1ac22e9be79d05eac5c6dc5a859c6a5 = L.marker(
+                [34.6526, 135.5062],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_10e0f0ede0bdf6d160295500fd5c6574 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "orange", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "black"}
+            )
+            marker_c1ac22e9be79d05eac5c6dc5a859c6a5.setIcon(beautify_icon_10e0f0ede0bdf6d160295500fd5c6574);
+        
+    
+        var popup_8957c94afeea957eb7ed367f20121bfe = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_441664e3fb15bcfb30c454b1b5893191 = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://tse2.mm.bing.net/th/id/OIP.IJCeIP33qFbazjOqAaJPOwHaFj?pid=Api' width='200'><br><p>老大阪風情的代表地區，夜晚霓虹燈閃爍氣氛濃厚。</p>`)>`)[0];
+            popup_8957c94afeea957eb7ed367f20121bfe.setContent(i_frame_441664e3fb15bcfb30c454b1b5893191);
+        
+
+        marker_c1ac22e9be79d05eac5c6dc5a859c6a5.bindPopup(popup_8957c94afeea957eb7ed367f20121bfe)
+        ;
+
+        
+    
+    
+            marker_c1ac22e9be79d05eac5c6dc5a859c6a5.bindTooltip(
+                `<div>
+                     新世界通天閣 (Day 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_46c88858be6ef49fef6e4f91d6bd1f83 = L.polyline(
+                [[34.6372, 135.4966], [34.6455, 135.5139]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_f9272b240e6ce1e825a1caf9ea00de3f = L.marker(
+                [34.64135, 135.50525],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_cd113401da3b4b8ed6046fa1acafb00e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u583a\u7b4b\u7dda\u003c/div\u003e"});
+            marker_f9272b240e6ce1e825a1caf9ea00de3f.setIcon(div_icon_cd113401da3b4b8ed6046fa1acafb00e);
+        
+    
+            var poly_line_84183c9aa72519c631dcdcd5fc3844a0 = L.polyline(
+                [[34.6455, 135.5139], [34.6525, 135.5167]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_9641fa7857c84dbf46599e4e0a1ff14f = L.marker(
+                [34.649, 135.5153],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_2c545f55be82795bcddfbf95f0172f8f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u6b65\u884c\u003c/div\u003e"});
+            marker_9641fa7857c84dbf46599e4e0a1ff14f.setIcon(div_icon_2c545f55be82795bcddfbf95f0172f8f);
+        
+    
+            var poly_line_cdb1244eaad988b6a0b1e68a2da3edfb = L.polyline(
+                [[34.6525, 135.5167], [34.6526, 135.5062]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_e72f64b4a8d1cd310e63612b1331cb87 = L.marker(
+                [34.652550000000005, 135.51145],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_36f4909b7b75bab7760f91bea41133d5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u6b65\u884c\u003c/div\u003e"});
+            marker_e72f64b4a8d1cd310e63612b1331cb87.setIcon(div_icon_36f4909b7b75bab7760f91bea41133d5);
+        
+    
+            var marker_0837553eeef9fd5d9ac63181e83fce36 = L.marker(
+                [34.6372, 135.4966],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_d90bf02e1a0700231359cd8232c83072 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "black"}
+            )
+            marker_0837553eeef9fd5d9ac63181e83fce36.setIcon(beautify_icon_d90bf02e1a0700231359cd8232c83072);
+        
+    
+            marker_0837553eeef9fd5d9ac63181e83fce36.bindTooltip(
+                `<div>
+                     住宿地點 (Day 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c83fd67373b3c65e611aeff94dac78f = L.marker(
+                [34.6873, 135.5262],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_c28dddaa70b25ffec10a81a3a9ba9bb2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "black"}
+            )
+            marker_1c83fd67373b3c65e611aeff94dac78f.setIcon(beautify_icon_c28dddaa70b25ffec10a81a3a9ba9bb2);
+        
+    
+        var popup_ea0e4d26e938423beebffc84553604d3 = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_3a71fd8adc253719b402271470f3be31 = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://upload.wikimedia.org/wikipedia/commons/1/13/Osaka_Castle_02bs3200.jpg' width='200'><br><p>大阪代表性古蹟，春季賞櫻勝地，環繞護城河景致宜人。</p>`)>`)[0];
+            popup_ea0e4d26e938423beebffc84553604d3.setContent(i_frame_3a71fd8adc253719b402271470f3be31);
+        
+
+        marker_1c83fd67373b3c65e611aeff94dac78f.bindPopup(popup_ea0e4d26e938423beebffc84553604d3)
+        ;
+
+        
+    
+    
+            marker_1c83fd67373b3c65e611aeff94dac78f.bindTooltip(
+                `<div>
+                     大阪城公園 (Day 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28d5fd039f5d346af7609a6825d5a398 = L.marker(
+                [34.7045, 135.5124],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_0dfd37f8383f1c9db46ab13c1aef0402 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 11, "textColor": "black"}
+            )
+            marker_28d5fd039f5d346af7609a6825d5a398.setIcon(beautify_icon_0dfd37f8383f1c9db46ab13c1aef0402);
+        
+    
+            marker_28d5fd039f5d346af7609a6825d5a398.bindTooltip(
+                `<div>
+                     天神橋筋商店街 (Day 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_03f113d33e1cb3bc90d4f032d405b7eb = L.polyline(
+                [[34.6372, 135.4966], [34.6873, 135.5262]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_db13dd45228a683a4a54e4e06939f0e9 = L.marker(
+                [34.66225, 135.51139999999998],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_1ddaa2f89728ceb2a8fcda405053b94c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u583a\u7b4b\u7dda\u2192\u8c37\u753a\u7dda\u003c/div\u003e"});
+            marker_db13dd45228a683a4a54e4e06939f0e9.setIcon(div_icon_1ddaa2f89728ceb2a8fcda405053b94c);
+        
+    
+            var poly_line_cea596399446858cd1dec24c5e79200e = L.polyline(
+                [[34.6873, 135.5262], [34.7045, 135.5124]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_50c284c0438ec7604d79ffa610edb181 = L.marker(
+                [34.6959, 135.5193],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_9ea664a0b406ba67b8072c6140a7e644 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u6b65\u884c/\u5730\u9435\u003c/div\u003e"});
+            marker_50c284c0438ec7604d79ffa610edb181.setIcon(div_icon_9ea664a0b406ba67b8072c6140a7e644);
+        
+    
+            var marker_be7baa1825a5bc2e63f10fe2e3547041 = L.marker(
+                [34.6372, 135.4966],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_9d6815e353818b4db8230d868eaf85da = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "purple", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 12, "textColor": "black"}
+            )
+            marker_be7baa1825a5bc2e63f10fe2e3547041.setIcon(beautify_icon_9d6815e353818b4db8230d868eaf85da);
+        
+    
+            marker_be7baa1825a5bc2e63f10fe2e3547041.bindTooltip(
+                `<div>
+                     住宿地點 (Day 5)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77da24c6fd6116cffcfc2724d5ecb3d1 = L.marker(
+                [34.6545, 135.4286],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_b7076d39e538c21200ccd82f763c8908 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "purple", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 13, "textColor": "black"}
+            )
+            marker_77da24c6fd6116cffcfc2724d5ecb3d1.setIcon(beautify_icon_b7076d39e538c21200ccd82f763c8908);
+        
+    
+        var popup_167706ffd50580d270602fa2d26ebd2f = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_9a784e9ce5c9ab43e27426a5badfeb6e = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://tse1.mm.bing.net/th/id/OIP.qAhuoa4GgAQe7RhKNzhjAQHaE8?pid=Api' width='200'><br><p>世界級大型水族館，以環太平洋海域為主題設計。</p>`)>`)[0];
+            popup_167706ffd50580d270602fa2d26ebd2f.setContent(i_frame_9a784e9ce5c9ab43e27426a5badfeb6e);
+        
+
+        marker_77da24c6fd6116cffcfc2724d5ecb3d1.bindPopup(popup_167706ffd50580d270602fa2d26ebd2f)
+        ;
+
+        
+    
+    
+            marker_77da24c6fd6116cffcfc2724d5ecb3d1.bindTooltip(
+                `<div>
+                     海遊館 (Day 5)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd17114b8288ead4dfab10408952bdb6 = L.marker(
+                [34.6547, 135.4282],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_b3e25928801cd2becbe9d1e244c0c26d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "purple", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 14, "textColor": "black"}
+            )
+            marker_bd17114b8288ead4dfab10408952bdb6.setIcon(beautify_icon_b3e25928801cd2becbe9d1e244c0c26d);
+        
+    
+        var popup_698788b48b18d93377186e35787a525b = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_5e395bd07774bb83a1ce6655d641699e = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://upload.wikimedia.org/wikipedia/commons/f/f7/Tempozan_Ferris_Wheel_Osaka_001.jpg' width='200'><br><p>高達112.5公尺的摩天輪，可俯瞰大阪灣港口景致。</p>`)>`)[0];
+            popup_698788b48b18d93377186e35787a525b.setContent(i_frame_5e395bd07774bb83a1ce6655d641699e);
+        
+
+        marker_bd17114b8288ead4dfab10408952bdb6.bindPopup(popup_698788b48b18d93377186e35787a525b)
+        ;
+
+        
+    
+    
+            marker_bd17114b8288ead4dfab10408952bdb6.bindTooltip(
+                `<div>
+                     天保山摩天輪 (Day 5)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_267d9cdd95aa84e2f337c09286365b01 = L.marker(
+                [34.403, 135.2978],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var beautify_icon_78ac262ced57e9b989f411b6a8ebd2a0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "purple", "borderWidth": 3, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 15, "textColor": "black"}
+            )
+            marker_267d9cdd95aa84e2f337c09286365b01.setIcon(beautify_icon_78ac262ced57e9b989f411b6a8ebd2a0);
+        
+    
+        var popup_08da07e6d4eafdb587c7ed9388c2bb94 = L.popup({"maxWidth": 250});
+
+        
+            var i_frame_cd8e517458949add01627a189de33467 = $(`<L.popup({"maxWidth": 250}).setContent(`<img src='https://tse3.mm.bing.net/th/id/OIP.RW7KLAaK7--sltWxhUuIzQHaFN?pid=Api' width='200'><br><p>鄰近關西機場的大型購物中心，品牌齊全價格優惠。</p>`)>`)[0];
+            popup_08da07e6d4eafdb587c7ed9388c2bb94.setContent(i_frame_cd8e517458949add01627a189de33467);
+        
+
+        marker_267d9cdd95aa84e2f337c09286365b01.bindPopup(popup_08da07e6d4eafdb587c7ed9388c2bb94)
+        ;
+
+        
+    
+    
+            marker_267d9cdd95aa84e2f337c09286365b01.bindTooltip(
+                `<div>
+                     臨空城Outlet (Day 5)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_29450ec4cf40ea0711b7bcdd3c5a77d9 = L.polyline(
+                [[34.6372, 135.4966], [34.6545, 135.4286]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_521f98844a637ca23354d16348f7bb41 = L.marker(
+                [34.645849999999996, 135.4626],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_afb2140d29ad64939cb6a566ab1a6446 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u4e2d\u592e\u7dda\u003c/div\u003e"});
+            marker_521f98844a637ca23354d16348f7bb41.setIcon(div_icon_afb2140d29ad64939cb6a566ab1a6446);
+        
+    
+            var poly_line_1151e4c2fd6731d29c0e6f9f8bbbe3aa = L.polyline(
+                [[34.6545, 135.4286], [34.6547, 135.4282]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_3a62330c0f49706c518a744aa5e7b35c = L.marker(
+                [34.6546, 135.4284],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_21f04915f0715285a39f1c59509cb0d3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u6b65\u884c\u003c/div\u003e"});
+            marker_3a62330c0f49706c518a744aa5e7b35c.setIcon(div_icon_21f04915f0715285a39f1c59509cb0d3);
+        
+    
+            var poly_line_3aa2453104d494a763ae15d0cfee76db = L.polyline(
+                [[34.6547, 135.4282], [34.403, 135.2978]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var marker_583208da27ba7e31926641f5d4c59252 = L.marker(
+                [34.52885, 135.363],
+                {}
+            ).addTo(map_6a67e5b5d9384640713dd098fe0a1e81);
+        
+    
+            var div_icon_29705e30364a97754d16e9531bfe3c7a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 11px; background: white; border:1px solid gray;\n                             padding:2px; border-radius:4px;\"\u003e\u5357\u6d77\u96fb\u9435\u003c/div\u003e"});
+            marker_583208da27ba7e31926641f5d4c59252.setIcon(div_icon_29705e30364a97754d16e9531bfe3c7a);
+        
+</script>
+</html>
